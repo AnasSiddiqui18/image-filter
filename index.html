@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Filter Image</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div data- id="app" class="flex flex-col min-h-screen items-center py-4">
+      <div id="button_parent" class="flex justify-center gap-5">
+        <button
+          id="all-btn"
+          class="bg-violet-500 text-white rounded-md px-5 py-2"
+          data-category="all"
+        >
+          All
+        </button>
+
+        <button
+          id="animal-btn"
+          class="bg-violet-500 text-white rounded-md px-5 py-2"
+          data-category="animal"
+        >
+          Animals
+        </button>
+        <button
+          id="bird-btn"
+          class="bg-violet-500 text-white rounded-md px-5 py-2"
+          data-category="bird"
+        >
+          Birds
+        </button>
+        <button
+          id="nature-btn"
+          class="bg-violet-500 text-white rounded-md px-5 py-2"
+          data-category="nature"
+        >
+          Nature
+        </button>
+      </div>
+
+      <div class="grid grid-cols-3 max-w-[800px] gap-5 mt-10">
+        <img
+          class="rounded-md"
+          src="/images/bird1.jpg"
+          data-category="bird"
+          alt="no-img"
+        />
+        <img
+          class="rounded-md"
+          src="/images/bird2.jpg"
+          data-category="bird"
+          alt="no-img"
+        />
+        <img
+          class="rounded-md"
+          src="/images/bird3.jpg"
+          data-category="bird"
+          alt="no-img"
+        />
+        <img
+          class="rounded-md"
+          src="/images/bird4.jpg"
+          data-category="bird"
+          alt="no-img"
+        />
+        <img
+          class="rounded-md"
+          src="/images/nature1.jpg"
+          data-category="nature"
+          alt="no-img"
+        />
+        <img
+          class="rounded-md"
+          src="/images/nature2.jpg"
+          data-category="nature"
+          alt="no-img"
+        />
+        <img
+          class="rounded-md"
+          src="/images/nature3.jpg"
+          data-category="nature"
+          alt="no-img"
+        />
+        <img
+          class="rounded-md"
+          src="/images/animal1.jpg"
+          data-category="animal"
+          alt="no-img"
+        />
+        <img
+          class="rounded-md"
+          src="/images/animal2.jpg"
+          data-category="animal"
+          alt="no-img"
+        />
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
